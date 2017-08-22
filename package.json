@@ -11,8 +11,8 @@
   "scripts": {
     "test": "jest",
     "test:dev": "jest --watch"
-},
-"author": "Ilya Shlyakhovoy <bulgarus@inbox.ru>",
+  },
+  "author": "Ilya Shlyakhovoy <bulgarus@inbox.ru>",
   "dependencies": {
     "memcached": "*"
   },
@@ -30,5 +30,9 @@
   },
   "jest": {
     "verbose": true
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/bgrusnak/querymemcache/issues"
+  },
+  "homepage": "https://github.com/bgrusnak/querymemcache#readme"
 }
