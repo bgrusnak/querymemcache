@@ -33,15 +33,9 @@ var cache=QueryMemCache({
 
 There only one method 
 
-#### `listDatabases`
+#### `process`
 
-Get the databases linked to the authenticated account
-
-`.listDatabases()`
-
-#### `listCollections`
-
-Get the collections in the specified database
+Check and cache the results of queryFunction
 
 `.process({observe:observedFields, change:changedFields}, queryFunction, callbackFunction)` 
 
@@ -51,9 +45,8 @@ Name | Description | Type | Required |
 -----|------------ |------|:----------:|
 observe| List of field names or arrays [field, operand, value] which needs to be observed | `Array` | No |
 change| List of field names or arrays [field, operand, value] which will b changed | `Array` | No |
-
-queryFunction - the function, which will called if no valid data is available.
-callbackFunction - the function, which will receive the result of the cache process
+queryFunction | The function, which will called if no valid data is available| `Function` |Yes|
+callbackFunction | The function, which will receive the result of the cache process| `Function` |No|
 
 
 ## Requirements
